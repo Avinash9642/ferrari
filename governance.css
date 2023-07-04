@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carlito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: ferrari;
+    src: url(assets/fonts/FerroRosso.ttf);
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    width: 100%;
+    position: relative;
+}
+
+.name {
+    font-family: ferrari;
+    margin: 1% 0 5% 2%;
+    font-size: 4em;
+    color: #F70D1A;
+    text-shadow: 0.08em 0.08em black; 
+    flex-basis: 10%;
+}
+
+.logo1 {
+    height: 3.25em;
+    width: 4%;
+    margin: 1.25% 2% 5% 0.5%;
+    transition: 0.5s ease-in-out;
+    flex-basis: 2%;
+}
+
+.logo1:hover {
+    transform: scale(0.9);
+}
+
+.redirect {
+    flex-basis: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.8% 5% auto 20%;
+    font-size: 1.5em;
+    font-family: 'Goldman', cursive;
+    color: white;
+}
+
+.redirect a{
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.05em;
+    transition: 0.4s ease-in-out;
+}
+
+.redirect a:hover {
+    color: #F70D1A;
+}
+
+.factory {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.governance {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem black;
+}
+
+.directors {
+    height: auto;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.directors_text {
+    width: 100%;
+    text-align: center;
+    padding: 4% 0 0 2%;
+
+}
+
+.directors_text h3 {
+    font-size: 1.25rem;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.directors_text h2 {
+    margin: 2% 0 0 0;
+    font-size: 2rem;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.directors_text p {
+    margin: 1%;
+    font-family: 'Carlito', sans-serif;
+
+}
+
+.bod {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 10% 5% 5%;
+}
+
+.bod_text {
+    height: 100%;
+    flex-basis: 65%;
+    text-align: justify;
+}
+
+.bod_img {
+    height: 100%;
+    flex-basis: 30%;
+    overflow: hidden;
+}
+
+.bod_img img {
+    height: 100%;
+    width: auto;
+    border: solid 0.3rem black;
+
+}
+
+.bod_text h2 {
+    font-family: 'Agdasima', sans-serif;
+    font-size: 2.5rem;
+    padding: 0 1% 1% 2%;
+
+}
+
+.bod_text h3 {
+    font-family: 'Mukta', sans-serif;
+    font-size: 1.75rem;
+    padding: 1% 1% 1% 2%;
+}
+
+.bod_text h4 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.25rem;
+    padding: 0.5% 1% 0.5% 2%;
+
+}
+
+.bod_text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    padding: 0.5% 0 0 2%;
+
+}
+
+.ed {
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.ed_img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform: scaleX(-1);
+}
+
+
+.ed_text {
+    position: relative;
+    padding: 12% 0 5% 5%;
+}
+
+.ed_text a {
+    color: white;
+    text-decoration: none;
+}
+
+.ed_text a h3 {
+    font-size: 4rem;
+    font-family: 'Agdasima', sans-serif;
+    margin: 5% 5% 2% 0;
+    text-shadow: 1rem 1rem 1rem black;
+}
+
+.discover {
+    display: flex;
+}
+
+.discover a {
+    font-size: 2rem;
+    font-family: 'Rubik', sans-serif;
+    transition: 1s ease-in-out;
+}
+
+.discover a:hover p{
+    color: #F70D1A;
+}
+
+.discover a img {
+    height: 100%;
+    width: 100%;
+    margin-left: 20%;
+}
+
+.sign_up {
+    height: 8vh;
+    width: 100%;
+    background-color: #18191A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sign_up a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+
+}
+
+
+.sign_up img {
+    height: 30%;
+    width: 5%;
+}
+
+.link1, .link2, .link3, .link4 {
+    transition: 0.5s ease-in-out;
+}
+
+.sign_up a:hover .link1 {
+    color: #3E65CF;
+}
+
+.sign_up a:hover .link2 {
+    color: #C71610;
+
+}
+
+.sign_up a:hover .link3 {
+    color: #F2A60C;
+}
+
+.sign_up a:hover .link4 {
+    color: #08851B;
+}
+
+.social_media {
+    background-color: #000;
+    height: 25vh;
+    display: grid;
+    grid-template: 5vh / repeat(5, 20%);
+    justify-items: center;
+    align-content: center;
+
+}
+
+.social_media a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    transition: 0.5s ease-in-out;
+}
+
+.grid_item {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.grid_item img {
+    height: 60%;
+    width: auto;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+
+.facebook a:hover {
+    color: #3B5998;
+}
+
+.instagram a:hover {
+    color: #E4405F;
+}
+
+.twitter a:hover {
+    color: #00acee;
+}
+
+.youtube a:hover {
+    color: #CD201F;
+}
+
+.twitch a:hover {
+    color: #6441A5;
+}
+
+.copyright {
+    padding: 4%;
+    height: 30vh;
+    width: 100%;
+    background-color: #18191A;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #555555;
+    font-family: 'Mitr', sans-serif;
+    font-size: 0.8rem;  
+}
+
+.shell {
+    height: 9vh;
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+}
+
+.shell a {
+    height: 100%;
+    width: 100%;
+    margin: 5%;
+}
+
+.shell a img {
+    height: 80%;
+    width: auto;
+}
+

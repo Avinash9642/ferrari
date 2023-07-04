@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Narnoor&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: ferrari;
+    src: url(assets/fonts/FerroRosso.ttf);
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    height: 85vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.name {
+    font-family: ferrari;
+    margin: 1% 0 5% 2%;
+    font-size: 4em;
+    color: #F70D1A;
+    text-shadow: 0.08em 0.08em black; 
+    flex-basis: 10%;
+}
+
+.logo1 {
+    height: 3.25em;
+    width: 4%;
+    margin: 1.25% 2% 5% 0.5%;
+    transition: 0.5s ease-in-out;
+    flex-basis: 2%;
+}
+
+.logo1:hover {
+    transform: scale(0.9);
+}
+
+.redirect {
+    flex-basis: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.8% 5% auto 20%;
+    font-size: 1.5em;
+    font-family: 'Goldman', cursive;
+    color: white;
+}
+
+.redirect a{
+    text-decoration: none;
+    color: white;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 0.05em;
+    transition: 0.4s ease-in-out;
+}
+
+.redirect a:hover {
+    color: #F70D1A;
+}
+
+.bannerimg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.sustainability_text {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem black;
+}
+
+
+.strategy_container {
+    display: flex;
+    height: 80vh;
+}
+
+.item1 {
+    flex-basis: 50%;
+    height: auto;
+    background-color: #FAFAFA;
+    color: white;
+    
+}
+
+.item2 {
+    flex-basis: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.item2 img {
+    height: 100%;
+    width: 100%;
+    transition: 5s ease-in-out;
+}
+
+.item2:hover img {
+    transform: scale(1.2);
+}
+
+
+.strategy {
+    color: #F70D1A ;
+    text-align: start;
+    font-size: 1em;
+    margin: 5% 2% 2% 3%;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.strategy_heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    margin: 20% 15% 2.5% 15%;
+    color: black;
+}
+
+.strategy_text {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.25rem;
+    color: #1C1C1C;
+    margin: 2.5% 15% 2.5% 15%;
+
+}
+
+.strategy_discover {
+    margin: 5% 15% 2.5% 15%;
+    display: flex;
+}
+
+.discover_link {
+    height: 5%;
+    width: 5%;
+    margin-right: 2%;
+}
+
+.strategy_container a {
+    text-decoration: none;
+}
+
+.strategy_discover a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Carlito', sans-serif;  
+}
+
+.policy_container {
+    text-align: center;
+    height: auto;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.policy {
+    color: #F70D1A ;
+    text-align: start;
+    font-size: 1em;
+    padding: 4% 2% 2% 3%;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.policy_container h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    margin: 2.5% 15% 1% 15%;
+    color: black;
+}
+
+.policy_discover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5% 0 5% 0;
+}
+
+.policy_discover a {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-family: 'Narnoor', serif;
+    font-size: 1.25rem;
+}
+
+.policy_container img {
+    height: 5%;
+    width: 5%;
+}
+
+.policy_text {
+    font-family: 'Narnoor', serif;
+    font-size: 1.25rem;
+    color: #4A4A4A;
+    margin: 1% 1% 4% 1%;
+}
+
+.document1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.document1 a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.document1_1 {
+    flex-basis: 50%;
+    text-align: left;
+    padding-left: 20%;
+}
+
+.document1_1 a h5 {
+    font-family: 'Mitr', sans-serif;
+    font-size: 1.25rem;
+
+}
+
+
+.document1_2 {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 50%;
+    margin-left: 5%;
+}
+
+.document1_2 img {
+    height: 4%;
+    width: 4%;
+    margin-left: 2%;
+
+}
+
+.document1_2 a p {
+    color: #222222;
+    font-size: 1rem;
+    font-family: 'Narnoor', serif;
+
+
+}
+
+hr {
+    height: 0.3vh;
+    background-color: #808080;
+    margin: 0% 25% 0% 25%;
+}
+
+
+.sign_up {
+    height: 8vh;
+    width: 100%;
+    background-color: #18191A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sign_up a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+
+}
+
+
+.sign_up img {
+    height: 30%;
+    width: 5%;
+}
+
+.link1, .link2, .link3, .link4 {
+    transition: 0.5s ease-in-out;
+}
+
+.sign_up a:hover .link1 {
+    color: #3E65CF;
+}
+
+.sign_up a:hover .link2 {
+    color: #C71610;
+
+}
+
+.sign_up a:hover .link3 {
+    color: #F2A60C;
+}
+
+.sign_up a:hover .link4 {
+    color: #08851B;
+}
+
+.social_media {
+    background-color: #000;
+    height: 25vh;
+    display: grid;
+    grid-template: 5vh / repeat(5, 20%);
+    justify-items: center;
+    align-content: center;
+
+}
+
+.social_media a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    transition: 0.5s ease-in-out;
+}
+
+.grid_item {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.grid_item img {
+    height: 60%;
+    width: auto;
+    margin-right: 20%;
+    margin-top: 5%;
+}
+
+.facebook a:hover {
+    color: #3B5998;
+}
+
+.instagram a:hover {
+    color: #E4405F;
+}
+
+.twitter a:hover {
+    color: #00acee;
+}
+
+.youtube a:hover {
+    color: #CD201F;
+}
+
+.twitch a:hover {
+    color: #6441A5;
+}
+
+.copyright {
+    padding: 4%;
+    height: 30vh;
+    width: 100%;
+    background-color: #18191A;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #555555;
+    font-family: 'Mitr', sans-serif;
+    font-size: 0.8rem;  
+}
+
+.shell {
+    height: 9vh;
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+}
+
+.shell a {
+    height: 100%;
+    width: 100%;
+    margin: 5%;
+}
+
+.shell a img {
+    height: 80%;
+    width: auto;
+}
